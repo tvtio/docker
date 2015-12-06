@@ -1,4 +1,4 @@
-build: pull clean
+build: clean
 	docker-compose build
 
 pull:
