@@ -1,2 +1,8 @@
 front:
-    build: ./repos/front
+    build: ../front
+    container_name: front
+    command: front
+    volumes:
+        - ../front:/go/src/github.com/tvtio/front
+    ports:
+        - "80:8080"

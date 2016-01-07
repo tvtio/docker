@@ -1,12 +1,11 @@
 build: clean
 	docker-compose build
 
-pull:
-	rm -rf repos
-	git clone git@github.com:tvtio/front.git repos/front
-
 up:
 	docker-compose up
+
+upd:
+	docker-compose up -d
 
 clean:
 	docker-compose rm -f front
