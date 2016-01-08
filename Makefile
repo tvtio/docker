@@ -9,3 +9,6 @@ upd:
 
 clean:
 	docker-compose rm -f front
+
+run-front:
+	docker-compose run --service-ports front bash
