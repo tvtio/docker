@@ -19,7 +19,7 @@ $ git clone git@github.com:tvtio/docker.git
 
 ```
 $ cd docker
-$ docker-machine --driver=virtualbox create default
+$ docker-machine create default --driver virtualbox
 $ docker-machine env default
 $ eval $(docker-machine env default)
 $ docker-machine ip default
@@ -30,7 +30,7 @@ $ # Now you are on a docker shell
 $ # Use 'make' to build
 $ # Use './front' to execute and Ctrl+C to stop
 $ # 'exit' to logout and destroy the container
-$ make 
+$ make
 $ ./front
 ```
 
